@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/eyesli/flycat-front.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,6 +17,6 @@
   },
   "homepage": "https://github.com/eyesli/flycat-front#readme",
   "dependencies": {
-    "vant-weapp": "^0.5.29"
+    "@vant/weapp": "^1.10.8"
   }
 }
