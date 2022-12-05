@@ -1,0 +1,53 @@
+{
+  "pages": [
+
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/me/me"
+  ],
+
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#85ba48",
+    "backgroundColor": "#5f4b48",
+    "navigationBarTitleText": "飞猫",
+    "navigationBarTextStyle": "black"
+
+  },
+
+  "tabBar": {
+    "color": "#303133",
+    "selectedColor": "#67C23A",
+    "backgroundColor": "#EEE",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/home(1).png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "数据统计",
+        "iconPath": "images/icons/data-sheet.png",
+        "selectedIconPath": "images/icons/data-sheet(1).png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-sticky": "@vant/weapp/sticky/index"
+  }
+}

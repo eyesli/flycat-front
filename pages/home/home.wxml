@@ -1,0 +1,60 @@
+<view class="home-header">
+
+  <image style="width: 200rpx;height: 200rpx;transform: translateY(80rpx);" src="../../images/icons/write.png" />
+  <text style=" height: 40rpx; transform: translateY(220rpx); padding-right: 40rpx; box-sizing: border-box;color: white;">飞猫聊天室</text>
+
+</view>
+
+<van-notice-bar scrollable backgroundColor="white" color="black" left-icon="volume" text="杯战线连续第2年上演广州德比战" />
+
+<view style="height: 10rpx;"></view>
+<van-cell-group>
+  <van-cell icon="location-o">
+    <view slot="title">
+      <view class="top_article">足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5</view>
+    </view>
+  </van-cell>
+
+  <van-cell icon="location-o">
+    <view slot="title">
+      <view class="top_article">足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5</view>
+    </view>
+  </van-cell>
+
+</van-cell-group>
+<view style="height: 10rpx;"></view>
+<swiper class="home-swiper" indicator-dots="true" interval="5000" duration="2000" indicator-color="#bfbfbf" indicator-active-color="#00ACED">
+
+  <swiper-item>
+    <van-cell use-label-slot border="{{false}}">
+
+      <image slot="icon" style="width: 60rpx;height: 60rpx; padding-right: 20rpx;" src="../../images/icons/home.png" mode="" />
+
+      <view style="height: 60rpx;" slot="title">
+        <text> 世界上最好的语言是什么</text>
+        <image style="width: 40rpx;height: 40rpx;" src="../../images/icons/home.png" mode="" />
+      </view>
+
+      <view slot="label">
+        <text class="active_desc"> 有人说是PHP,有人说是java，有人说是python，有人说是javascript，有人说是golang，有人说是rust有人说是javascript，有人说是golang，有人说是rust</text>
+      </view>
+
+    </van-cell>
+
+  </swiper-item>
+</swiper>
+<view style="height: 10rpx;"></view>
+
+  <van-tabs  sticky  swipeable active="{{ 1 }}" bind:change="onChange"> 
+  <van-tab title="关注">
+    内容 1
+  </van-tab>
+  <van-tab title="推荐">
+  
+    
+    
+  </van-tab>
+  <van-tab title="热门">内容 3</van-tab>
+</van-tabs>
+
+
