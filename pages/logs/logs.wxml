@@ -1,6 +1,16 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log.date}}</text>
-  </block>
+<van-cell-group>
+  <van-field
+
+    value="{{  }}"
+    autosize="{{ true }}"
+    type='textarea'
+    placeholder="请输入用户名" 
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+
+</van-cell-group>
+
+<view style=" height: 300rpx; background-color: rgb(126, 97, 97); ">
+  <text space decode="{{true}}"> {{ value }}</text>
 </view>

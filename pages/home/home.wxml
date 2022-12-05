@@ -1,3 +1,5 @@
+
+
 <view class="home-header">
 
   <image style="width: 200rpx;height: 200rpx;transform: translateY(80rpx);" src="../../images/icons/write.png" />
@@ -45,7 +47,7 @@
 </swiper>
 <view style="height: 10rpx;"></view>
 
-<van-tabs sticky swipeable active="{{ 1 }}" bind:change="onChange">
+<van-tabs sticky swipeable active="{{ 1 }}" bind:change="onChange2">
   <van-tab title="关注">
     内容 1
   </van-tab>
