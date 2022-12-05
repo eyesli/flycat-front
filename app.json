@@ -30,7 +30,7 @@
       },
       {
         "pagePath": "pages/me/me",
-        "text": "数据统计",
+        "text": "我的",
         "iconPath": "images/icons/data-sheet.png",
         "selectedIconPath": "images/icons/data-sheet(1).png"
       }
@@ -48,8 +48,8 @@
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index",
     "van-popup": "@vant/weapp/popup/index",
-    "van-sticky": "@vant/weapp/sticky/index",
-    "van-grid": "@vant/weapp/grid/index",
-    "van-grid-item": "@vant/weapp/grid-item/index"
+    "van-sticky": "@vant/weapp/sticky/index"
+
+   
   }
 }
