@@ -4,5 +4,26 @@
   "setting": {
     "compileHotReLoad": true,
     "urlCheck": false
+  },
+  "libVersion": "2.19.6",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/router/router",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/home/home",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }
