@@ -41,3 +41,9 @@ page {
   /* 垂直方向超出隐藏 */
   -webkit-box-orient: vertical;
 }
+
+.test{
+  width: 400rpx;
+  padding: 0;
+  margin-left: -1111rpx !important;
+}

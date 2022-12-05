@@ -7,7 +7,7 @@ Page({
    */
   data: {
     active: 0,
-    value:"",
+    showComment: ['1'],
     pictures: [
       'https://ss2.meipian.me/users/7688015/fd48714cf63cb47ee267c9823f468ab7.jpg?imageView2/2/w/750/h/1400/q/80',
       'https://img2.baidu.com/it/u=1929970115,3940539460&fm=253&fmt=auto&app=138&f=JPEG?w=291&h=220',
@@ -27,7 +27,18 @@ Page({
     })
   },
 
+  comment:function(e){
+    this.setData({
+      showComment: e.detail,
+    });
+   },
 
+
+
+  tabswitch:function(e){
+  
+   },
+  
 
   /**
    * 生命周期函数--监听页面加载 

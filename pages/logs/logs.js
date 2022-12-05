@@ -18,7 +18,7 @@ Page({
       url: 'http://192.168.101.11:8080/api/test', //接口地址
       method: 'post',
       data: {
-        x: value,
+        x: value.replace(/\s/g,"&nbsp;"),
       },
       header: {
         'content-type': 'application/json' // 默认值

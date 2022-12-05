@@ -11,13 +11,6 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/router/router",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
           "pathName": "pages/home/home",
           "query": "",
           "launchMode": "default",
