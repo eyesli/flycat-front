@@ -30,7 +30,7 @@
 
       <image slot="icon" style="width: 60rpx;height: 60rpx; padding-right: 20rpx;" src="../../images/icons/home.png" mode="" />
 
-      <view style="height: 60rpx;" slot="title">
+      <view style="height: 60rpx; display: flex;" slot="title">
         <text> 世界上最好的语言是什么</text>
         <image style="width: 40rpx;height: 40rpx;" src="../../images/icons/home.png" mode="" />
       </view>
