@@ -8,6 +8,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+
+
     active: 0,
     showComment: ['1'],
     pictures: [
@@ -15,7 +17,14 @@ Page({
       'https://img2.baidu.com/it/u=1929970115,3940539460&fm=253&fmt=auto&app=138&f=JPEG?w=291&h=220',
       'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20200220%2Fd40e11b10c9c4b91ab7e3338173744c8.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672824205&t=a96bec56e2e68a7c7647c088d9b4fbf5'
     ],
+    pageInfo: {
+      "page": 1,
+      "size": 20
+    },
+    tabs_active: 1,
+    recommendList: {
 
+    }
   },
 
 
@@ -49,12 +58,16 @@ Page({
 
 
 
-    recommendList().then((res) => {
-      console.log(res)
-      if (res.code === 0) {
-        console.log("res", res);
+    recommendList(this.data.pageInfo).then((res) => {
 
-      } 
+      if (res.code === 200) {
+
+      
+        this.setData({
+          recommendList: res.data.content
+        })
+
+      }
     }).finally(() => wx.hideLoading());
 
 
@@ -91,6 +104,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
+    console.log("页面相关事件处理函数--监听用户下拉动作")
 
   },
 
@@ -98,6 +112,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
+    console.log("页面上拉触底事件的处理函数")
 
   },
 

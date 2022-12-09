@@ -6,7 +6,7 @@ module.exports = {
   request: function(url, method = 'POST', data = {}, isLoading = true, loadingMsg = "加载中...") {
     // 操作url
     var url = `${baseUrl}${url}`
-    console.log(url)
+    console.log(data)
     // 操作data
     var data = data
     if (isLoading) wx.showLoading({ title: loadingMsg });
@@ -14,10 +14,7 @@ module.exports = {
       wx.request({
         url: url,
         method: method,
-        data: {
-          page : 1,
-          size:5
-        },
+        data: data,
         timeout: 5 * 1000,
         header: {
           'Content-type': 'application/json'
