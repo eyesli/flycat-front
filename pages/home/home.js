@@ -1,4 +1,6 @@
-// pages/home/home.js
+const {
+  recommendList
+} = require('../../http/api.js')
 
 Page({
 
@@ -17,36 +19,45 @@ Page({
   },
 
 
-  preview:function(e){
+  preview: function (e) {
     var index = e.currentTarget.dataset.index;
-    
+
     wx.previewImage({
       current: "https://ss2.meipian.me/users/7688015/fd48714cf63cb47ee267c9823f468ab7.jpg?imageView2/2/w/750/h/1400/q/80", // 当前显示图片的http链接
       urls: this.data.pictures, // 需要预览的图片http链接列表
-    
+
     })
   },
 
-  comment:function(e){
+  comment: function (e) {
     this.setData({
       showComment: e.detail,
     });
-   },
+  },
 
 
 
-  tabswitch:function(e){
-  
-   },
-  
+  tabswitch: function (e) {
+
+  },
+
 
   /**
    * 生命周期函数--监听页面加载 
    */
   onLoad(options) {
 
+
+
+    recommendList().then((res) => {
+      if (res.code === 0) {
+        console.log("res", res);
+
+      } 
+    });
+
+
   },
-   
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
