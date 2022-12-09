@@ -55,56 +55,56 @@
 
     <van-cell-group>
 
-<view wx:for="{{recommendList}}" wx:for-index="index" wx:for-item="item" wx:key="id" >
+      <view wx:for="{{recommendList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
 
-      <van-cell use-label-slot border="{{false}}">
+        <van-cell use-label-slot border="{{false}}">
 
-        <image slot="icon" class="user_image"  src="../../images/icons/ava.png" mode="" />
+          <image slot="icon" class="user_image" src="../../images/icons/ava.png" mode="" />
 
-        <view style="height: 60rpx;" slot="title">
-          <text> --赵日天 </text>
+          <view style="height: 60rpx;" slot="title">
+            <text> --赵日天 </text>
 
-        </view>
+          </view>
 
-        <view slot="label">
-          <rich-text class="rich-text"> {{item.content}}</rich-text>
+          <view slot="label">
+            <rich-text class="rich-text"> {{item.content}}</rich-text>
 
-          <van-grid direction="horizontal" column-num="3">
-            <van-grid-item use-slot>
-              <image style="width: 200rpx; height: 90px; " bindtap="preview" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20200220%2Fd40e11b10c9c4b91ab7e3338173744c8.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672824205&t=a96bec56e2e68a7c7647c088d9b4fbf5" />
-            </van-grid-item>
-            <van-grid-item use-slot>
-              <image style="width: 200rpx; height: 160rpx;" src="https://img.yzcdn.cn/vant/apple-{{ 1+ 1 }}.jpg" />
-            </van-grid-item>
-          </van-grid>
-          <view style="margin-top: 10rpx; display: flex;">
-            <text> 9分钟前</text>
+            <van-grid direction="horizontal" column-num="3">
+              <van-grid-item use-slot>
+                <image style="width: 200rpx; height: 90px; " bindtap="preview" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20200220%2Fd40e11b10c9c4b91ab7e3338173744c8.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672824205&t=a96bec56e2e68a7c7647c088d9b4fbf5" />
+              </van-grid-item>
+              <van-grid-item use-slot>
+                <image style="width: 200rpx; height: 160rpx;" src="https://img.yzcdn.cn/vant/apple-{{ 1+ 1 }}.jpg" />
+              </van-grid-item>
+            </van-grid>
+            <view style="margin-top: 10rpx; display: flex;">
+              <text> 9分钟前</text>
 
-            <text style="margin-left: 380rpx;"> 评论</text>
+              <text style="margin-left: 380rpx;"> 评论</text>
 
-            <text style="margin-left: 40rpx;"> 点赞</text>
+              <text style="margin-left: 40rpx;"> 点赞</text>
+            </view>
+
+
+            <view style="margin-top: 20rpx;">
+              <text> 赵日天：在下赵日天</text>
+
+            </view>
+            <view style="margin-top: 10rpx;">
+              <text> 赵日天：******</text>
+            </view>
+            <view style="margin-top: 10rpx;">
+              <input style="border: 1px solid rgb(235, 231, 231); border-radius: 5px;" type="text" placeholder="  说点什么吧"></input>
+            </view>
+
+
           </view>
 
 
-          <view style="margin-top: 20rpx;">
-            <text> 赵日天：在下赵日天</text>
+        </van-cell>
+        <view style="height: 10rpx;"></view>
 
-          </view>
-          <view style="margin-top: 10rpx;">
-            <text> 赵日天：******</text>
-          </view>
-          <view style="margin-top: 10rpx;">
-            <input style="border: 1px solid rgb(235, 231, 231); border-radius: 5px;" type="text" placeholder="  说点什么吧"></input>
-          </view>
-
-
-        </view>
-
-
-      </van-cell>
-      <view style="height: 10rpx;"></view>
-  
-    </view>
+      </view>
     </van-cell-group>
 
 
@@ -116,8 +116,8 @@
 
   <van-popup show="{{ false }}" position="bottom" custom-style="height: 20%;" bind:close="onClose">
     <van-cell-group>
-    <view>评论内容</view>
-      <van-field value="{{ message }}" type="textarea"  autosize border="{{ true }}" />
+      <view>评论内容</view>
+      <van-field value="{{ message }}" type="textarea" autosize border="{{ true }}" />
     </van-cell-group>
   </van-popup>
 </van-tabs>
