@@ -50,11 +50,12 @@ Page({
 
 
     recommendList().then((res) => {
+      console.log(res)
       if (res.code === 0) {
         console.log("res", res);
 
       } 
-    });
+    }).finally(() => wx.hideLoading());
 
 
   },

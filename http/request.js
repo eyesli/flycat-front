@@ -5,7 +5,7 @@ const {baseUrl}=require('./env.js').dev
 module.exports = {
   request: function(url, method = 'POST', data = {}, isLoading = true, loadingMsg = "加载中...") {
     // 操作url
-    var url = `${baseUrl}+${url}`
+    var url = `${baseUrl}${url}`
     console.log(url)
     // 操作data
     var data = data
