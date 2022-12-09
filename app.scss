@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import './style/variable.scss';
+
 .container {
   
   height: 100%;
@@ -9,4 +11,5 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
 

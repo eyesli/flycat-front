@@ -1,0 +1,87 @@
+@import '../../app.scss';
+
+page {
+  background: $pageBgColor;
+}
+
+.home {
+  &-header {
+    display: flex;
+    height: 300rpx;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: $pageBgColor;
+    display: flex;
+    align-items: flex-end;
+    .home-header_wrap {
+      height: 60rpx;
+      width: 100vw;
+      display: flex;
+      padding: 10rpx 40rpx;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &_logo {
+      width: 60rpx;
+      height:60rpx;
+    }
+    &_desc {
+      height: 40rpx;
+      color: #333;
+    }
+  }
+}
+
+.top_article {
+  width: 650rpx;
+  font-size: 25rpx;
+  padding-left: 20rpx;
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 超出隐藏 */
+  text-overflow: ellipsis;
+  /* 超出部分显示省略号 */
+}
+
+.home-swiper {
+  background-color: white;
+  height: 220rpx;
+}
+
+
+.active_desc {
+  width: 600rpx;
+  color: "#999";
+  margin-top: 10rpx;
+  /* 内容超宽不显示。末尾生硬结束，没有省略号标识*/
+  overflow: hidden;
+  /* 内容末尾追加省略号。 */
+  text-overflow: ellipsis;
+  /* 使用自适应布局方式显示 */
+  display: -webkit-box;
+  /* 限定最多 2 行 */
+  -webkit-line-clamp: 2;
+  /* 垂直方向超出隐藏 */
+  -webkit-box-orient: vertical;
+}
+
+.user_image {
+  width: 60rpx;
+  height: 60rpx;
+  padding-right: 20rpx;
+}
+.rich-text{
+  font-size: 28rpx;
+  color: rgb(95, 90, 90);
+    /* 内容超宽不显示。末尾生硬结束，没有省略号标识*/
+    overflow: hidden;
+    /* 内容末尾追加省略号。 */
+    text-overflow: ellipsis;
+    /* 使用自适应布局方式显示 */
+    display: -webkit-box;
+    /* 限定最多 2 行 */
+    -webkit-line-clamp: 4;
+    /* 垂直方向超出隐藏 */
+    -webkit-box-orient: vertical;
+}

@@ -1,7 +1,6 @@
 
 
 const {baseUrl}=require('./env.js').dev
-
 module.exports = {
   request: function(url, method = 'POST', data = {}, isLoading = true, loadingMsg = "加载中...") {
     // 操作url

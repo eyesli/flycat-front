@@ -1,8 +1,8 @@
 <view class="home-header">
-
-  <image style="width: 200rpx;height: 200rpx;transform: translateY(80rpx);" src="../../images/icons/write.png" />
-  <text style=" height: 40rpx; transform: translateY(220rpx); padding-right: 40rpx; box-sizing: border-box;color: white;">飞猫聊天室</text>
-
+  <view class="home-header_wrap">
+    <image class="home-header_logo"  src="../../images/icons/cat.png" />
+    <text class="home-header_desc">飞猫聊天室</text>
+  </view>
 </view>
 
 <van-notice-bar scrollable backgroundColor="white" color="black" left-icon="volume" text="杯战线连续第2年上演广州德比战" />
