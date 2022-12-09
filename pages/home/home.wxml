@@ -55,7 +55,9 @@
 
     <van-cell-group>
 
-      <van-cell wx:for="{{recommendList}}" wx:for-index="index" wx:for-item="item" wx:key="id" use-label-slot border="{{false}}">
+<view wx:for="{{recommendList}}" wx:for-index="index" wx:for-item="item" wx:key="id" >
+
+      <van-cell use-label-slot border="{{false}}">
 
         <image slot="icon" class="user_image"  src="../../images/icons/ava.png" mode="" />
 
@@ -101,7 +103,8 @@
 
       </van-cell>
       <view style="height: 10rpx;"></view>
-
+  
+    </view>
     </van-cell-group>
 
 
