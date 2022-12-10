@@ -1,11 +1,11 @@
 
 
-const {baseUrl}=require('./env.js').dev
+const {baseUrl}=require('./env.js').test
 module.exports = {
   request: function(url, method = 'POST', data = {}, isLoading = true, loadingMsg = "加载中...") {
     // 操作url
     var url = `${baseUrl}${url}`
-    console.log(data)
+    console.log(url)
     // 操作data
     var data = data
     if (isLoading) wx.showLoading({ title: loadingMsg });

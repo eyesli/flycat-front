@@ -1,5 +1,6 @@
 const {
-  recommendList
+  recommendList,
+  recommendListById
 } = require('../../http/api.js')
 
 Page({
@@ -22,9 +23,8 @@ Page({
       "size": 20
     },
     tabs_active: 1,
-    recommendList: {
-
-    }
+    recommendList: [],
+    next:false
   },
 
 
@@ -58,15 +58,17 @@ Page({
 
 
 
-    recommendList(this.data.pageInfo).then((res) => {
+    //第一次进来传index，代表第一页，后面要传帖子ID
+    recommendListById("index",10).then((res) => {
 
       if (res.code === 200) {
 
       
         this.setData({
-          recommendList: res.data.content
+          recommendList:res.data.content,
+          next:res.data.next
         })
-
+ 
       }
     }).finally(() => wx.hideLoading());
 

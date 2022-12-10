@@ -71,6 +71,10 @@ page {
   height: 60rpx;
   padding-right: 20rpx;
 }
+.user_nickname{
+
+  height: 60rpx;
+}
 .rich-text{
   font-size: 28rpx;
   color: rgb(95, 90, 90);
@@ -80,8 +84,11 @@ page {
     text-overflow: ellipsis;
     /* 使用自适应布局方式显示 */
     display: -webkit-box;
-    /* 限定最多 2 行 */
+    /* 限定最多 4 行 */
     -webkit-line-clamp: 4;
     /* 垂直方向超出隐藏 */
     -webkit-box-orient: vertical;
+}
+.article_image{
+  width: 200rpx; height: 90px;
 }

@@ -8,4 +8,5 @@ module.exports = {
   // 首页帖子list
   recommendList:(data)=>request('/api/article/recommendList', 'GET', data, true),
 
+  recommendListById:(id,size)=>request(`/api/article/recommendList/${id}?size=${size}`, 'GET', null, true),
 }
