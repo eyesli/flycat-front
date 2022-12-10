@@ -75,7 +75,7 @@
 
             </van-grid>
             <view style="margin-top: 10rpx; display: flex;">
-              <text> 9分钟前</text>
+              <text> {{item.articleBO.postedTimeFormat}}</text>
 
               <text style="margin-left: 380rpx;"> 评论</text>
 
