@@ -71,6 +71,10 @@ Page({
       }
     }).finally(() => wx.hideLoading());
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e765f96 (remove dayjs)
 
   },
   /**

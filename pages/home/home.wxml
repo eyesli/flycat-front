@@ -7,7 +7,7 @@
 
 <van-notice-bar scrollable backgroundColor="white" color="black" left-icon="volume" text="杯战线连续第2年上演广州德比战" />
 
-<view style="height: 10rpx;"></view>
+<van-divider custom-style="margin: 0;" />
 <van-cell-group>
   <van-cell icon="location-o">
     <view slot="title">
@@ -22,7 +22,7 @@
   </van-cell>
 
 </van-cell-group>
-<view style="height: 10rpx;"></view>
+<van-divider custom-style="margin: 0;" />
 <swiper class="home-swiper" indicator-dots="true" interval="5000" duration="2000" indicator-color="#bfbfbf" indicator-active-color="#00ACED">
 
   <swiper-item>
@@ -43,7 +43,7 @@
 
   </swiper-item>
 </swiper>
-<view style="height: 10rpx;"></view>
+<van-divider custom-style="margin: 0;" />
 
 <van-tabs sticky swipeable active="{{ tabs_active }}" bind:change="tabswitch">
   <van-tab title="关注">
@@ -51,7 +51,6 @@
   </van-tab>
 
   <van-tab title="推荐">
-    <view style="height: 10rpx;"></view>
 
     <van-cell-group>
 
@@ -99,7 +98,7 @@
 
 
         </van-cell>
-        <view style="height: 10rpx;"></view>
+        <van-divider custom-style="margin: 0;" />
 
       </view>
     </van-cell-group>
