@@ -67,8 +67,8 @@ page {
 }
 
 .user_image {
-  width: 60rpx;
-  height: 60rpx;
+  width: 100rpx;
+  height: 100rpx;
   padding-right: 20rpx;
 }
 .user_nickname{
@@ -76,7 +76,9 @@ page {
   height: 60rpx;
 }
 .rich-text{
-  font-size: 28rpx;
+ 
+  text-align: justify;
+  font-size: 30rpx;
   color: rgb(95, 90, 90);
     /* 内容超宽不显示。末尾生硬结束，没有省略号标识*/
     overflow: hidden;
@@ -90,5 +92,15 @@ page {
     -webkit-box-orient: vertical;
 }
 .article_image{
-  width: 200rpx; height: 90px;
+  width: 190rpx; height: 100px;
+  margin-top: 10rpx;
+  
+}
+.image_wiper{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  box-sizing: border-box;  
+  
 }

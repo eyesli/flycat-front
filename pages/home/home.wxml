@@ -67,20 +67,22 @@
           <view slot="label">
             <rich-text class="rich-text"> {{item.article.content}}</rich-text>
 
-            <van-grid  bindtap="preview" data-list="{{item.article.imageList}}" direction="horizontal" column-num="3">
+            <van-grid  class="image_wiper" bindtap="preview" data-list="{{item.article.imageList}}" direction="horizontal" column-num="3">
               <van-grid-item  wx:for="{{item.article.imageList}}"  wx:key="*this" use-slot>
                 <image class="article_image"  data-src="{{item}}" src="{{item}}" />
               </van-grid-item>
 
             </van-grid>
-            <view style="margin-top: 10rpx; display: flex;">
+            
+            <view >
+              <van-divider custom-style="margin-top: 10rpx" />
               <text> {{item.article.postedTimeFormat}}</text>
 
-              <text style="margin-left: 380rpx;"> 评论</text>
+              <text style="margin-left: 350rpx;"> 评论</text>
 
-              <text style="margin-left: 40rpx;"> 点赞</text>
+              <text style="margin-left: 30rpx;"> 点赞</text>
             </view>
-
+         
 
             <view style="margin-top: 20rpx;">
               <text> 赵日天：在下赵日天</text>
@@ -98,7 +100,7 @@
 
 
         </van-cell>
-        <van-divider custom-style="margin: 0;" />
+        <van-divider custom-style="margin: 1rpx" />
 
       </view>
     </van-cell-group>
