@@ -2,6 +2,8 @@ const {
   recommendList,
   recommendListById
 } = require('../../http/api.js')
+// 在js文件中引入
+const dayjs = require("./dayjs");
 
 Page({
 
@@ -71,6 +73,8 @@ Page({
  
       }
     }).finally(() => wx.hideLoading());
+
+    console.log(dayjs('2019-01-25').format('[YYYYescape] YYYY-MM-DDTHH:mm:ssZ[Z]') )
 
 
   },
