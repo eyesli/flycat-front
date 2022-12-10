@@ -58,23 +58,23 @@
 
         <van-cell use-label-slot border="{{false}}">
 
-          <image slot="icon" class="user_image" src="{{item.userBO.icon}}" mode="" />
+          <image slot="icon" class="user_image" src="{{item.user.icon}}" mode="" />
 
           <view class="user_nickname" slot="title">
-            <text> {{item.userBO.nickName}} </text>
+            <text> {{item.user.nickName}} </text>
           </view>
 
           <view slot="label">
-            <rich-text class="rich-text"> {{item.articleBO.content}}</rich-text>
+            <rich-text class="rich-text"> {{item.article.content}}</rich-text>
 
-            <van-grid  bindtap="preview" data-list="{{item.articleBO.imageList}}" direction="horizontal" column-num="3">
-              <van-grid-item  wx:for="{{item.articleBO.imageList}}"  wx:key="*this" use-slot>
+            <van-grid  bindtap="preview" data-list="{{item.article.imageList}}" direction="horizontal" column-num="3">
+              <van-grid-item  wx:for="{{item.article.imageList}}"  wx:key="*this" use-slot>
                 <image class="article_image"  data-src="{{item}}" src="{{item}}" />
               </van-grid-item>
 
             </van-grid>
             <view style="margin-top: 10rpx; display: flex;">
-              <text> {{item.articleBO.postedTimeFormat}}</text>
+              <text> {{item.article.postedTimeFormat}}</text>
 
               <text style="margin-left: 380rpx;"> 评论</text>
 
