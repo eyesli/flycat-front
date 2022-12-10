@@ -71,11 +71,6 @@ Page({
       }
     }).finally(() => wx.hideLoading());
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e765f96 (remove dayjs)
-
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
