@@ -22,7 +22,21 @@ Page({
     tabs_active: 1,
     recommendList: [],
     next: false,
-    topArticle:[]
+    topArticle:[],
+    seiperImages: [
+      {
+        src: "../../images/background_bg/home_swiper1.jpg",
+      },
+      {
+        src: "../../images/background_bg/home_swiper2.jpg",
+      },
+      {
+        src: "../../images/background_bg/home_swiper3.jpg",
+      },
+      {
+        src: "../../images/background_bg/home_swiper4.jpg",
+      }
+    ]
   },
 
 

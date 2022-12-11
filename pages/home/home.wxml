@@ -1,24 +1,22 @@
-<view class="home-header">
-  <view class="home-header_wrap">
-    <image class="home-header_logo"  src="../../images/icons/cat.png" />
-    <text class="home-header_desc">飞猫聊天室</text>
-  </view>
-</view>
+<swiper class="home-swiper" indicator-dots="true" autoplay="true" interval="3000" duration="2000" indicator-color="#bfbfbf" indicator-active-color="#00ACED">
 
-<van-notice-bar scrollable backgroundColor="white" color="black" left-icon="volume" text="杯战线连续第2年上演广州德比战" />
+  <swiper-item wx:for="{{seiperImages}}" wx:for-item="item">
+    <image src="{{item.src}}" style="width: 100vw;" mode="scaleToFill" />
+  </swiper-item>
+  <!-- <van-cell use-label-slot border="{{false}}">
 
-<van-divider custom-style="margin: 0;" />
-<van-cell-group>
-  <van-cell wx:for="{{topArticle}}" wx:for-index="index" wx:for-item="item" wx:key="id"  icon="location-o">
-    <view slot="title">
-      <view class="top_article">{{item.article.title}}</view>
+    <image slot="icon" style="width: 60rpx;height: 60rpx; padding-right: 20rpx;" src="../../images/icons/home.png" mode="" />
+
+    <view style="height: 60rpx; display: flex;" slot="title">
+      <text> 世界上最好的语言是什么</text>
+      <image style="width: 40rpx;height: 40rpx;" src="../../images/icons/home.png" mode="" />
     </view>
-  </van-cell>
 
+    <view slot="label">
+      <text class="active_desc"> 有人说是PHP,有人说是java，有人说是python，有人说是javascript，有人说是golang，有人说是rust有人说是javascript，有人说是golang，有人说是rust</text>
+    </view>
 
-</van-cell-group>
-<van-divider custom-style="margin: 0;" />
-<swiper class="home-swiper" indicator-dots="true" interval="5000" duration="2000" indicator-color="#bfbfbf" indicator-active-color="#00ACED">
+  </van-cell> -->
 
   <swiper-item>
     <van-cell use-label-slot border="{{false}}">
@@ -38,6 +36,26 @@
 
   </swiper-item>
 </swiper>
+
+<!-- <view class="home-header">
+  <view class="home-header_wrap">
+    <image class="home-header_logo"  src="../../images/icons/cat.png" />
+    <text class="home-header_desc">飞猫聊天室</text>
+  </view>
+</view> -->
+
+<van-notice-bar scrollable backgroundColor="white" color="black" left-icon="volume" text="杯战线连续第2年上演广州德比战" />
+
+<van-divider custom-style="margin: 0;" />
+<van-cell-group>
+  <van-cell wx:for="{{topArticle}}" wx:for-index="index" wx:for-item="item" wx:key="id" icon="location-o">
+    <view slot="title">
+      <view class="top_article">{{item.article.title}}</view>
+    </view>
+  </van-cell>
+</van-cell-group>
+
+<van-divider custom-style="margin: 0;" />
 <van-divider custom-style="margin: 0;" />
 
 <van-tabs sticky swipeable active="{{ tabs_active }}" bind:change="tabswitch">
@@ -62,14 +80,14 @@
           <view slot="label">
             <rich-text class="rich-text"> {{item.article.content}}</rich-text>
 
-            <van-grid  class="image_wiper" bindtap="preview" data-list="{{item.article.imageList}}" direction="horizontal" column-num="3">
-              <van-grid-item  wx:for="{{item.article.imageList}}"  wx:key="*this" use-slot>
-                <image class="article_image"  data-src="{{item}}" src="{{item}}" />
+            <van-grid class="image_wiper" bindtap="preview" data-list="{{item.article.imageList}}" direction="horizontal" column-num="3">
+              <van-grid-item wx:for="{{item.article.imageList}}" wx:key="*this" use-slot>
+                <image class="article_image" data-src="{{item}}" src="{{item}}" />
               </van-grid-item>
 
             </van-grid>
-            
-            <view >
+
+            <view>
               <van-divider custom-style="margin-top: 10rpx" />
               <text> {{item.article.postedTimeFormat}}</text>
 
@@ -77,7 +95,7 @@
 
               <text style="margin-left: 30rpx;"> 点赞</text>
             </view>
-         
+
 
             <view style="margin-top: 20rpx;">
               <text> 赵日天：在下赵日天</text>
