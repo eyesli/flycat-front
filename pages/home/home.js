@@ -1,5 +1,6 @@
 const {
-  recommendListById
+  recommendListById,
+  getTopArticle
 } = require('../../http/api.js')
 
 Page({
@@ -20,7 +21,8 @@ Page({
     },
     tabs_active: 1,
     recommendList: [],
-    next: false
+    next: false,
+    topArticle:[]
   },
 
 
@@ -49,6 +51,18 @@ Page({
   onLoad(options) {
 
 
+    getTopArticle().then((res) => {
+
+      if (res.code === 200) {
+
+        this.setData({
+          topArticle: res.data,
+        })
+
+      }
+      
+      console.log(this.data.topArticle[0].article)
+    })
 
     //第一次进来传index，代表第一页，后面要传帖子ID
     recommendListById("index", 10).then((res) => {

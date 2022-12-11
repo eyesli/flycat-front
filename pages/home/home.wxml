@@ -9,17 +9,12 @@
 
 <van-divider custom-style="margin: 0;" />
 <van-cell-group>
-  <van-cell icon="location-o">
+  <van-cell wx:for="{{topArticle}}" wx:for-index="index" wx:for-item="item" wx:key="id"  icon="location-o">
     <view slot="title">
-      <view class="top_article">足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5</view>
+      <view class="top_article">{{item.article.title}}</view>
     </view>
   </van-cell>
 
-  <van-cell icon="location-o">
-    <view slot="title">
-      <view class="top_article">足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5</view>
-    </view>
-  </van-cell>
 
 </van-cell-group>
 <van-divider custom-style="margin: 0;" />
