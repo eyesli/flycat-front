@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/eyesli/flycat-front#readme",
   "dependencies": {
-    "@icon-park/vue-next": "^1.4.2",
     "@vant/weapp": "^1.10.8"
-
   }
 }
