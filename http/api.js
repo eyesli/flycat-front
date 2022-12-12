@@ -9,5 +9,5 @@ module.exports = {
   recommendList:(data)=>request('/api/article/recommendList', 'GET', data, true),
 
   recommendListById:(id,size)=>request(`/api/article/recommendList/${id}?size=${size}`, 'GET', null, true),
-  getTopArticle:(id,size)=>request(`/api/article/getTopArticle`, 'GET', null, false),
+  getTopArticle:()=>request(`/api/article/getTopArticle`, 'GET', null, false),
 }
