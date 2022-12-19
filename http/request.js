@@ -9,6 +9,7 @@ module.exports = {
     // 操作data
     var data = data
     if (isLoading) wx.showLoading({ title: loadingMsg });
+    let usertoken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODAwNjgyMDUsInVzZXJJZCI6IjYzOTQ3NGRmNjUzZmJkNzY3MDllMmJmYSJ9.IF8DzckZfSBOxXpQbHlHT8-mtYHbV3eIfUOAp8-bzPY';
     return new Promise((resolve, reject)=>{
       wx.request({
         url: url,
@@ -16,7 +17,8 @@ module.exports = {
         data: data,
         timeout: 5 * 1000,
         header: {
-          'Content-type': 'application/json'
+          'Content-type': 'application/json',
+          'access-token': usertoken
         },
         success(res) {
           console.log(`##############################`)
