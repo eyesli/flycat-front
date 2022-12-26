@@ -3,46 +3,10 @@
   <swiper-item wx:for="{{seiperImages}}" wx:for-item="item">
     <image src="{{item.src}}" style="width: 100vw;" mode="scaleToFill" />
   </swiper-item>
-  <!-- <van-cell use-label-slot border="{{false}}">
 
-    <image slot="icon" style="width: 60rpx;height: 60rpx; padding-right: 20rpx;" src="../../images/icons/home.png" mode="" />
-
-    <view style="height: 60rpx; display: flex;" slot="title">
-      <text> 世界上最好的语言是什么</text>
-      <image style="width: 40rpx;height: 40rpx;" src="../../images/icons/home.png" mode="" />
-    </view>
-
-    <view slot="label">
-      <text class="active_desc"> 有人说是PHP,有人说是java，有人说是python，有人说是javascript，有人说是golang，有人说是rust有人说是javascript，有人说是golang，有人说是rust</text>
-    </view>
-
-  </van-cell> -->
-
-  <swiper-item>
-    <van-cell use-label-slot border="{{false}}">
-
-      <image slot="icon" style="width: 60rpx;height: 60rpx; padding-right: 20rpx;" src="../../images/icons/home.png" mode="" />
-
-      <view style="height: 60rpx; display: flex;" slot="title">
-        <text> 世界上最好的语言是什么</text>
-        <image style="width: 40rpx;height: 40rpx;" src="../../images/icons/home.png" mode="" />
-      </view>
-
-      <view slot="label">
-        <text class="active_desc"> 有人说是PHP,有人说是java，有人说是python，有人说是javascript，有人说是golang，有人说是rust有人说是javascript，有人说是golang，有人说是rust</text>
-      </view>
-
-    </van-cell>
-
-  </swiper-item>
 </swiper>
 
-<!-- <view class="home-header">
-  <view class="home-header_wrap">
-    <image class="home-header_logo"  src="../../images/icons/cat.png" />
-    <text class="home-header_desc">飞猫聊天室</text>
-  </view>
-</view> -->
+
 
 <van-notice-bar scrollable backgroundColor="white" color="black" left-icon="volume" text="杯战线连续第2年上演广州德比战" />
 
